@@ -8,8 +8,8 @@ public class Regex{
 	Scanner sc=new Scanner(System.in);
 	String pin=sc.nextLine();
 	
-	Pattern pattern = Pattern.compile("^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$"); //Some websites and banks have the habit of spacing pincode after 3 digits 
-	Matcher m=pattern.matcher(pin);                                         //To match both 515411 and 515 411 the following pattern will sure work.
+	Pattern pattern = Pattern.compile("[0-9]{6}"); //pin code is 6 digit string
+	Matcher m=pattern.matcher(pin);                                       
 	int i=0;
 
 	while(m.find()){
