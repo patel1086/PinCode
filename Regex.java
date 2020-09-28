@@ -8,7 +8,7 @@ public class Regex{
 	Scanner sc=new Scanner(System.in);
 	String pin=sc.nextLine();
 	
-	Pattern pattern = Pattern.compile("^[0-9]{6}$"); //pin code is 6 digit string
+	Pattern pattern = Pattern.compile("^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$"); //pin code is 6 digit string
 	Matcher m=pattern.matcher(pin);                                       
 	int i=0;
 
